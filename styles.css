@@ -72,6 +72,7 @@ nav{
     padding: 2.5em;
     width: 100%;
     margin: 0 auto;
+    height: 4em;
     /* background: linear-gradient(70deg, #2123AC, #C1B8D3, #7CA4E2); */
     background-color: var(--primarydark);
 /*     border-bottom-left-radius: 50px;
@@ -86,13 +87,14 @@ nav{
 
 nav img{
     width: auto;
-    height: 5em;
+    height: 3.4em;
     cursor: pointer;
 }
 
 nav ul{
     display: flex;
     list-style: none;
+    align-items: center;
 }
 
 nav ul li a{
