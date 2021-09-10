@@ -1,0 +1,533 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root {
+    --primarydark:#171717;
+    --primarydarkrgba: rgba(48, 63, 223, 0.685);
+    --primary: ##494C8C;
+    --dark:#2C3F59;
+    --dark-not-black: #2c2f33;
+    --focus-border: #00b0f4;
+    --status-green: #43b581;
+    --text-link: #00b0f4;
+    --off-white: #f6f6f6
+    ;}
+
+body{
+    background-color: white;
+    font-family: 'Urbanist', sans-serif;
+}
+
+main {
+    position: absolute;
+    background-color: var(--off-white);
+}
+
+/* main img{
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+} */
+
+body img.fondo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* main img.img1{
+    position: absolute;
+    width: 500px;
+    top: 4%;
+    right: 0;
+    z-index: 1;
+}
+
+main img.img2{
+    position: absolute;
+    width: 630px;
+    top: 3.7%;
+    left: -4%;
+    z-index: 1;
+}
+ */
+
+header nav ul li a i{
+    font-size: 2em;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.5em;
+    width: 100%;
+    margin: 0 auto;
+    /* background: linear-gradient(70deg, #2123AC, #C1B8D3, #7CA4E2); */
+    background-color: var(--primarydark);
+/*     border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px; */
+    z-index: 10;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav img{
+    width: auto;
+    height: 5em;
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 0 2em;
+    font-weight: 700;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.button{
+    background-color: white;
+    padding: 1em 1.5em;
+    border-radius: 5em;
+    text-decoration: none;
+    color: #23272a;
+    font-size: 1.4em;
+}
+
+.button:hover{
+    color: var(--primary);
+}
+
+.home{
+    width: 50%;
+    margin: 9.2vh auto;
+    padding: 1em;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.home h1{
+    font-size: 6em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    color:var(--primarydark);
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+}
+
+.home h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+.home p{
+    color:var(--primarydark);
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 2.5em;
+}
+
+/* .home a{
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 2em;
+    color: white;
+    background-color: var(--primarydark);
+    padding: 18px;
+    font-weight: 500;
+}
+
+ */
+/* .home a:hover{
+    background-color: var(--dark-not-black);
+    transition: ease .3s;
+} */
+
+/* .home .download{
+    color: var(--dark);
+    background-color: white;
+}
+
+.home .download:hover{
+    color: var(--primary);
+    background-color: white;
+}
+ */
+/* .home .dop{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 65%;
+    margin: 0 auto;
+}
+ */
+section{
+    height: 70vh;
+    padding: 4em 2em;
+    display: flex;
+    align-items: center;
+}
+
+section.in{
+    background-color: white;
+}
+
+section.par{
+    background-color: var(--off-white);
+}
+
+div.container-tarjeta{
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    /*background-color: crimson;*/
+    /*border: 1px solid var(--primary);*/
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2em 5em;
+    /*box-shadow: 10px 10px 14px -8px var(--dark);
+    -webkit-box-shadow: 10px 10px 14px -8px var(--dark);
+    -moz-box-shadow: 10px 10px 14px -8px var(--dark);*/
+}
+
+div.ctl{
+    width: 60%;
+    text-align: center;
+    display: block;
+}
+
+section.parlast{
+    height: auto;
+}
+
+div.container-tarjeta img{
+    z-index: 1;
+    width: 50em;
+    position: static;
+}
+
+div.container-tarjeta div.tarjeta div a{
+    font-size: 1.4em;
+    padding: 1em;
+    display: inline-block;
+    margin-top: 2em;
+    background-color: transparent;
+    border: 1px solid var(--dark);
+    color: var(--dark) !important;
+}
+
+div.container-tarjeta div.tarjeta div a:hover{
+    background-color: var(--dark);
+    color: white !important;
+    transition: .3s ease;
+}
+
+div.container-tarjeta h3{
+    font-size: 3em;
+    z-index: 10;
+    margin-bottom: 5em;
+}
+
+
+.tarjeta{
+/*     background-color: brown; */
+    padding: 5em;
+}
+
+.tarjeta h2{
+    font-size: 5em;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.tarjeta p{
+    font-size: 2em;
+    color: var(--primary);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+div.container-tarjeta img.estrellas{
+    width: 55%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 9%;
+    left: 0;
+    right: 0;
+}
+
+div.container-tarjeta img{
+    border-radius: 100%;
+}
+
+div.container-tarjeta a{
+    display: inline;
+    padding: 1.5em 3em;
+    font-size: 2em;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    background-color: var(--primarydark);
+    margin-bottom: 5em;
+}
+
+div.container-tarjeta a:hover{
+    background-color: var(--primary);
+    transition: 3s ease;
+}
+
+.t1,
+.t3{
+    background-color: white;
+}
+
+.t2{
+    background-color: var(--off-white);
+}
+
+
+/* ----------------TEXTOS EDITADOS SEGÚN SUS CANCIONES---------------- */
+
+/* Flor de loto -------------- */
+.container-tarjeta .fdl{
+    color: #f6bdc4;
+}
+
+div.container-tarjeta div.tarjeta div .fdlgm{
+    background-color: #f6bdc4;
+    border: none;
+    color: white !important;
+}
+
+div.container-tarjeta div.tarjeta div .fdlgm:hover{
+    background-color: var(--off-white);
+    color: #f6bdc4 !important;
+}
+
+div.container-tarjeta div.tarjeta div .fdl2{
+    background-color: #f6bdc4;
+    border: none;
+    color: white !important;
+}
+
+div.container-tarjeta div.tarjeta div .fdl2:hover{
+    background-color: var(--off-white);
+    color: #f6bdc4 !important;
+}
+
+/* Lirio del valle ------------------*/
+
+.container-tarjeta .ldv{
+    color: #538210;
+}
+
+div.container-tarjeta div.tarjeta div .ldvgm{
+    background-color: #538210;
+    border: none;
+    color: white !important;
+}
+
+div.container-tarjeta div.tarjeta div .ldvgm:hover{
+    background-color: var(--off-white);
+    color: #538210 !important;
+}
+
+div.container-tarjeta div.tarjeta div .ldv2{
+    background-color: #538210;
+    border: none;
+    color: white !important;
+}
+
+div.container-tarjeta div.tarjeta div .ldv2:hover{
+    background-color: var(--off-white);
+    color: #538210 !important;
+}
+
+/* -------------- Última batalla --------
+ */
+.container-tarjeta .ub{
+    color: #666b71;
+}
+
+div.container-tarjeta div.tarjeta div .ubgm{
+    background-color: #666b71;
+    border: none;
+    color: white !important;
+}
+
+div.container-tarjeta div.tarjeta div .ubgm:hover{
+    background-color: var(--off-white);
+    color: #666b71 !important;
+}
+
+div.container-tarjeta div.tarjeta div .ub2{
+    background-color: #666b71;
+    border: none;
+    color: white !important;
+}
+
+div.container-tarjeta div.tarjeta div .ub2:hover{
+    background-color: var(--off-white);
+    color: #666b71 !important;
+}
+
+/* --------------Arrebol---------- */
+
+.container-tarjeta .ab{
+    color: #333f79;
+}
+
+div.container-tarjeta div.tarjeta div .abgm{
+    background-color: #333f79;
+    border: none;
+    color: white !important;
+}
+
+div.container-tarjeta div.tarjeta div .abgm:hover{
+    background-color: var(--off-white);
+    color: #333f79 !important;
+}
+
+div.container-tarjeta div.tarjeta div .ab2{
+    background-color: #333f79;
+    border: none;
+    color: white !important;
+}
+
+div.container-tarjeta div.tarjeta div .ab2:hover{
+    background-color: var(--off-white);
+    color: #333f79 !important;
+}
+
+
+@media (max-width: 1200px){
+        .home{
+            width: 70%;
+        }
+
+        div.container-tarjeta {
+            width: 90%;
+        }
+
+        div.container-tarjeta img{
+            width: 30em;
+            height: 30em;
+        }        
+    }
+    
+    @media (max-width: 992px){
+        div.container-tarjeta img{
+            display: none;
+        } 
+
+        div.container-tarjeta .tarjeta{
+            padding: 1em;
+        }
+
+        section{
+            height: 60vh;
+        }
+
+/*         div.container-tarjeta div.tarjeta div .fdl2{
+            background-color: lawngreen;
+            margin: 2.8em 0 !important;
+        }
+
+        div.container-tarjeta div.tarjeta div .fdlgm{
+            background-color: lawngreen;
+            margin: 2.8em 0 !important;
+        } */
+    }
+    
+/*     @media (max-width: 768px){
+
+    } */
+
+    @media (min-width: 1201px){
+        main section{
+            height: 78em;
+        }
+    }
+
+    @media (max-width: 576px){
+        .home{
+            width: 90%;
+        }
+
+        div.container-tarjeta{
+            padding: 1em;
+        }
+
+        html{
+            font-size: 40%;
+        }
+
+        section{
+            height: 70vh;
+        }
+
+        a.ubgm,
+        .ub2,
+        .abgm,
+        .ab2,
+        .fdlgm,
+        .fdl2,
+        .ldvgm,
+        .ldv2{
+            font-size: 0.5em;
+            margin: 0.5em 0 !important;
+            padding: 0.5em 2em !important;
+            font-size: 1.2em !important;
+        }
+        
+        div.container-tarjeta div.tarjeta div .ubgm{
+            background-color: #666b71;
+            border: none;
+            color: white !important;
+        }
+    }
+
+    @media (max-height: 1140px){
+        section{
+            height: 80em;
+        }
+    }
+
+    
+    @media (max-height: 600px){
+        section{
+            height: 62em;
+        }
+    }
+
+    @media (max-height: 360px){
+        section{
+            height: 55em;
+        }
+    }
